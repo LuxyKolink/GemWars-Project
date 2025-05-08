@@ -7,6 +7,8 @@ TagManager:
   - Eldar
   - bala
   - Environment
+  - Kaida
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -55,6 +57,9 @@ TagManager:
     locked: 0
   - name: Obstacles
     uniqueID: 703742987
+    locked: 0
+  - name: 
+    uniqueID: 2214996143
     locked: 0
   m_RenderingLayers:
   - Default

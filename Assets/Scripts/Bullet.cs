@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifetime = 2f;
+    public int damage = 1;
     private GameObject player;
 
     void Start()
@@ -23,7 +24,23 @@ public class Bullet : MonoBehaviour
         // Si la bala choca con un objeto del entorno (por ejemplo, tagged "Environment")
         if (collision.gameObject.CompareTag("Environment"))
         {
+            Debug.Log("La bala de Eldar aachocó con el entorno.");
+            Destroy(gameObject);
+            return;
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag("Kaida"))
+        {
+            // Aquí podrías reducir la vida del jugador
+            Debug.Log("Kaida recibió daño de Eldar");
+            Destroy(gameObject);
+            return;
+            Destroy(gameObject);
+        }
+
+
     }
+
+    
 }
