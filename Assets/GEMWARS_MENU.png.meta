@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GEMWARS_MENU_0: 3501833697336677181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
